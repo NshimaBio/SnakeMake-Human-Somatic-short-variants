@@ -4,7 +4,7 @@ SnakeMake workflow for Human Somatic short variants (SNP+INDEL)
 
 ### Expected fastq inputs
 
-Matched normal and tumor samples
+Matched normal and tumor samples.
 
 ### Reference
 
