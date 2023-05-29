@@ -2,7 +2,7 @@ GATK best practices workflow Pipeline summary
 
 SnakeMake workflow for Human Somatic short variants (SNP+INDEL)
 
-### expected fastq inputs
+### Expected fastq inputs
 
 matched normal and tumor samples
 
