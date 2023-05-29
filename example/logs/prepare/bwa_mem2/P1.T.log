@@ -1,0 +1,561 @@
+Looking to launch executable "/home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/8ac25bf006f63422e06827a7709f9346_/bin/bwa-mem2.avx", simd = .avx
+Launching executable "/home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/8ac25bf006f63422e06827a7709f9346_/bin/bwa-mem2.avx"
+samblaster: Version 0.1.26
+samblaster: Inputting from stdin
+-----------------------------
+Executing in AVX mode!!
+-----------------------------
+* SA compression enabled with xfactor: 8
+* Ref file: /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta
+* Entering FMI_search
+* Index file found. Loading index from /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta.bwt.2bit.64
+* Reference seq len for bi-index = 6434693835
+22:04:02.306 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/8ac25bf006f63422e06827a7709f9346_/share/picard-slim-3.0.0-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sun May 28 22:04:02 CST 2023] SortSam --INPUT /dev/stdin --OUTPUT /dev/stdout --SORT_ORDER coordinate --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sun May 28 22:04:02 CST 2023] Executing as victor@shpc-1385-instance-rVoBySAX on Linux 5.15.0-71-generic amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:3.0.0
+* sentinel-index: 2736215060
+* Count:
+0,	1
+1,	1882204624
+2,	3217346918
+3,	4552489212
+4,	6434693835
+
+* Reading other elements of the index from files /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta
+* Index prefix: /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta
+* Read 0 ALT contigs
+* Done reading Index!!
+* Reading reference genome..
+* Binary seq file = /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta.0123
+* Reference genome size: 6434693834 bp
+* Done reading reference genome !!
+
+------------------------------------------
+1. Memory pre-allocation for Chaining: 2786.7754 MB
+2. Memory pre-allocation for BSW: 4792.3405 MB
+3. Memory pre-allocation for BWT: 1546.2835 MB
+------------------------------------------
+* Threads used (compute): 20
+* No. of pipeline threads: 2
+
+[0000] read_chunk: 200000000, work_chunk_size: 200000084, nseq: 2006228
+	[0000][ M::kt_pipeline] read 2006228 sequences (200000084 bp)...
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 0
+[0000] 1. Calling kt_for - worker_bwt
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006228 reads in 427.836 CPU sec, 285.294 real sec
+samblaster: Loaded 3366 header sequence entries.
+INFO	2023-05-28 22:09:10	SAMFileWriterFactory	Unknown file extension, assuming BAM format when writing file: file:///dev/stdout
+INFO	2023-05-28 22:09:13	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+[0000] read_chunk: 200000000, work_chunk_size: 200000182, nseq: 2006906
+	[0000][ M::kt_pipeline] read 2006906 sequences (200000182 bp)...
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 1
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000148, nseq: 2006780
+	[0000][ M::kt_pipeline] read 2006780 sequences (200000148 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006906 reads in 389.188 CPU sec, 121.936 real sec
+[0000] Calling mem_process_seqs.., task: 2
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000155, nseq: 2006986
+	[0000][ M::kt_pipeline] read 2006986 sequences (200000155 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006780 reads in 386.684 CPU sec, 113.007 real sec
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 3
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000132, nseq: 2006892
+	[0000][ M::kt_pipeline] read 2006892 sequences (200000132 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006986 reads in 376.147 CPU sec, 125.373 real sec
+[0000] Calling mem_process_seqs.., task: 4
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000153, nseq: 2006656
+	[0000][ M::kt_pipeline] read 2006656 sequences (200000153 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006892 reads in 369.881 CPU sec, 146.739 real sec
+[0000] Calling mem_process_seqs.., task: 5
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000156, nseq: 2007214
+	[0000][ M::kt_pipeline] read 2007214 sequences (200000156 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006656 reads in 359.325 CPU sec, 139.945 real sec
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 6
+[0000] 1. Calling kt_for - worker_bwt
+INFO	2023-05-28 22:20:49	SortSam	Read    10,000,000 records.  Elapsed time: 00:11:38s.  Time for last 10,000,000:  698s.  Last read position: chr6:85,522,703.  Last read name: SRR24443168.11271192
+[0000] read_chunk: 200000000, work_chunk_size: 200000140, nseq: 2006878
+	[0000][ M::kt_pipeline] read 2006878 sequences (200000140 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007214 reads in 354.006 CPU sec, 118.427 real sec
+[0000] Calling mem_process_seqs.., task: 7
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000100, nseq: 2007006
+	[0000][ M::kt_pipeline] read 2007006 sequences (200000100 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006878 reads in 358.497 CPU sec, 92.323 real sec
+[0000] Calling mem_process_seqs.., task: 8
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000195, nseq: 2006726
+	[0000][ M::kt_pipeline] read 2006726 sequences (200000195 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007006 reads in 363.147 CPU sec, 119.474 real sec
+[0000] Calling mem_process_seqs.., task: 9
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000149, nseq: 2006688
+	[0000][ M::kt_pipeline] read 2006688 sequences (200000149 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006726 reads in 348.743 CPU sec, 89.891 real sec
+[0000] Calling mem_process_seqs.., task: 10
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000141, nseq: 2004222
+	[0000][ M::kt_pipeline] read 2004222 sequences (200000141 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006688 reads in 365.310 CPU sec, 109.099 real sec
+[0000] Calling mem_process_seqs.., task: 11
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000169, nseq: 2004482
+	[0000][ M::kt_pipeline] read 2004482 sequences (200000169 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004222 reads in 377.267 CPU sec, 110.384 real sec
+[0000] Calling mem_process_seqs.., task: 12
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000044, nseq: 2004260
+	[0000][ M::kt_pipeline] read 2004260 sequences (200000044 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004482 reads in 341.764 CPU sec, 88.060 real sec
+[0000] Calling mem_process_seqs.., task: 13
+[0000] 1. Calling kt_for - worker_bwt
+INFO	2023-05-28 22:32:37	SortSam	Read    20,000,000 records.  Elapsed time: 00:23:26s.  Time for last 10,000,000:  707s.  Last read position: chr15:63,680,599.  Last read name: SRR24443168.24969063
+[0000] read_chunk: 200000000, work_chunk_size: 200000010, nseq: 2004460
+	[0000][ M::kt_pipeline] read 2004460 sequences (200000010 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004260 reads in 334.416 CPU sec, 79.338 real sec
+[0000] Calling mem_process_seqs.., task: 14
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000142, nseq: 2004268
+	[0000][ M::kt_pipeline] read 2004268 sequences (200000142 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004460 reads in 345.455 CPU sec, 97.683 real sec
+[0000] Calling mem_process_seqs.., task: 15
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000006, nseq: 2004418
+	[0000][ M::kt_pipeline] read 2004418 sequences (200000006 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004268 reads in 335.256 CPU sec, 74.938 real sec
+[0000] Calling mem_process_seqs.., task: 16
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000185, nseq: 2004446
+	[0000][ M::kt_pipeline] read 2004446 sequences (200000185 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004418 reads in 334.922 CPU sec, 123.225 real sec
+[0000] Calling mem_process_seqs.., task: 17
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000005, nseq: 2004566
+	[0000][ M::kt_pipeline] read 2004566 sequences (200000005 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004446 reads in 370.950 CPU sec, 111.015 real sec
+[0000] Calling mem_process_seqs.., task: 18
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000197, nseq: 2004396
+	[0000][ M::kt_pipeline] read 2004396 sequences (200000197 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004566 reads in 347.680 CPU sec, 83.026 real sec
+[0000] Calling mem_process_seqs.., task: 19
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000129, nseq: 2004492
+	[0000][ M::kt_pipeline] read 2004492 sequences (200000129 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004396 reads in 353.691 CPU sec, 128.836 real sec
+[0000] Calling mem_process_seqs.., task: 20
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000158, nseq: 2004376
+	[0000][ M::kt_pipeline] read 2004376 sequences (200000158 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004492 reads in 368.531 CPU sec, 127.129 real sec
+[0000] Calling mem_process_seqs.., task: 21
+[0000] 1. Calling kt_for - worker_bwt
+INFO	2023-05-28 22:46:04	SortSam	Read    30,000,000 records.  Elapsed time: 00:36:53s.  Time for last 10,000,000:  806s.  Last read position: chr15:81,318,331.  Last read name: SRR24443168.40697303
+[0000] read_chunk: 200000000, work_chunk_size: 200000180, nseq: 2004330
+	[0000][ M::kt_pipeline] read 2004330 sequences (200000180 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004376 reads in 350.066 CPU sec, 93.855 real sec
+[0000] Calling mem_process_seqs.., task: 22
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000151, nseq: 2004570
+	[0000][ M::kt_pipeline] read 2004570 sequences (200000151 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004330 reads in 364.903 CPU sec, 108.080 real sec
+[0000] Calling mem_process_seqs.., task: 23
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000170, nseq: 2004334
+	[0000][ M::kt_pipeline] read 2004334 sequences (200000170 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004570 reads in 350.793 CPU sec, 110.061 real sec
+[0000] Calling mem_process_seqs.., task: 24
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000059, nseq: 2004732
+	[0000][ M::kt_pipeline] read 2004732 sequences (200000059 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004334 reads in 329.606 CPU sec, 87.189 real sec
+[0000] Calling mem_process_seqs.., task: 25
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000096, nseq: 2004312
+	[0000][ M::kt_pipeline] read 2004312 sequences (200000096 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004732 reads in 338.589 CPU sec, 128.002 real sec
+[0000] Calling mem_process_seqs.., task: 26
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000093, nseq: 2004672
+	[0000][ M::kt_pipeline] read 2004672 sequences (200000093 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004312 reads in 347.180 CPU sec, 108.046 real sec
+[0000] Calling mem_process_seqs.., task: 27
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000082, nseq: 2004444
+	[0000][ M::kt_pipeline] read 2004444 sequences (200000082 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004672 reads in 329.328 CPU sec, 107.520 real sec
+[0000] Calling mem_process_seqs.., task: 28
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000196, nseq: 2004672
+	[0000][ M::kt_pipeline] read 2004672 sequences (200000196 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004444 reads in 339.672 CPU sec, 136.290 real sec
+[0000] Calling mem_process_seqs.., task: 29
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000197, nseq: 2004352
+	[0000][ M::kt_pipeline] read 2004352 sequences (200000197 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004672 reads in 347.588 CPU sec, 122.692 real sec
+[0000] Calling mem_process_seqs.., task: 30
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000179, nseq: 2004480
+	[0000][ M::kt_pipeline] read 2004480 sequences (200000179 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004352 reads in 353.833 CPU sec, 129.057 real sec
+[0000] Calling mem_process_seqs.., task: 31
+[0000] 1. Calling kt_for - worker_bwt
+INFO	2023-05-28 23:04:52	SortSam	Read    40,000,000 records.  Elapsed time: 00:55:41s.  Time for last 10,000,000: 1,128s.  Last read position: chr15:29,894,921.  Last read name: SRR24443168.60430899
+[0000] read_chunk: 200000000, work_chunk_size: 200000153, nseq: 2005836
+	[0000][ M::kt_pipeline] read 2005836 sequences (200000153 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004480 reads in 352.281 CPU sec, 111.310 real sec
+[0000] Calling mem_process_seqs.., task: 32
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000110, nseq: 2006816
+	[0000][ M::kt_pipeline] read 2006816 sequences (200000110 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2005836 reads in 350.360 CPU sec, 87.183 real sec
+[0000] Calling mem_process_seqs.., task: 33
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000000, nseq: 2007614
+	[0000][ M::kt_pipeline] read 2007614 sequences (200000000 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006816 reads in 370.544 CPU sec, 144.733 real sec
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 34
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000017, nseq: 2006658
+	[0000][ M::kt_pipeline] read 2006658 sequences (200000017 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007614 reads in 382.989 CPU sec, 123.236 real sec
+[0000] Calling mem_process_seqs.., task: 35
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000100, nseq: 2008096
+	[0000][ M::kt_pipeline] read 2008096 sequences (200000100 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006658 reads in 367.941 CPU sec, 104.128 real sec
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 36
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000182, nseq: 2006562
+	[0000][ M::kt_pipeline] read 2006562 sequences (200000182 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2008096 reads in 402.860 CPU sec, 152.524 real sec
+[0000] Calling mem_process_seqs.., task: 37
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000114, nseq: 2008208
+	[0000][ M::kt_pipeline] read 2008208 sequences (200000114 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006562 reads in 369.253 CPU sec, 120.671 real sec
+[0000] Reallocating initial memory allocations!!
+[0000] Calling mem_process_seqs.., task: 38
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000047, nseq: 2006784
+	[0000][ M::kt_pipeline] read 2006784 sequences (200000047 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2008208 reads in 386.407 CPU sec, 96.615 real sec
+[0000] Calling mem_process_seqs.., task: 39
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000068, nseq: 2007964
+	[0000][ M::kt_pipeline] read 2007964 sequences (200000068 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006784 reads in 384.246 CPU sec, 146.956 real sec
+[0000] Calling mem_process_seqs.., task: 40
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000189, nseq: 2007134
+	[0000][ M::kt_pipeline] read 2007134 sequences (200000189 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007964 reads in 389.161 CPU sec, 130.137 real sec
+[0000] Calling mem_process_seqs.., task: 41
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000037, nseq: 2007940
+	[0000][ M::kt_pipeline] read 2007940 sequences (200000037 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007134 reads in 368.710 CPU sec, 85.503 real sec
+[0000] Calling mem_process_seqs.., task: 42
+[0000] 1. Calling kt_for - worker_bwt
+INFO	2023-05-28 23:26:38	SortSam	Read    50,000,000 records.  Elapsed time: 01:17:27s.  Time for last 10,000,000: 1,306s.  Last read position: chr1:181,941,574.  Last read name: SRR24443168.82684916
+[0000] read_chunk: 200000000, work_chunk_size: 200000066, nseq: 2005330
+	[0000][ M::kt_pipeline] read 2005330 sequences (200000066 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007940 reads in 400.260 CPU sec, 134.541 real sec
+[0000] Calling mem_process_seqs.., task: 43
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000110, nseq: 2004462
+	[0000][ M::kt_pipeline] read 2004462 sequences (200000110 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2005330 reads in 349.000 CPU sec, 102.157 real sec
+[0000] Calling mem_process_seqs.., task: 44
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000184, nseq: 2004590
+	[0000][ M::kt_pipeline] read 2004590 sequences (200000184 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004462 reads in 358.410 CPU sec, 113.831 real sec
+[0000] Calling mem_process_seqs.., task: 45
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000126, nseq: 2004502
+	[0000][ M::kt_pipeline] read 2004502 sequences (200000126 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004590 reads in 359.414 CPU sec, 97.442 real sec
+[0000] Calling mem_process_seqs.., task: 46
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000158, nseq: 2004636
+	[0000][ M::kt_pipeline] read 2004636 sequences (200000158 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004502 reads in 347.032 CPU sec, 79.611 real sec
+[0000] Calling mem_process_seqs.., task: 47
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000048, nseq: 2004410
+	[0000][ M::kt_pipeline] read 2004410 sequences (200000048 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004636 reads in 355.758 CPU sec, 128.181 real sec
+[0000] Calling mem_process_seqs.., task: 48
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000057, nseq: 2004738
+	[0000][ M::kt_pipeline] read 2004738 sequences (200000057 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004410 reads in 340.539 CPU sec, 102.522 real sec
+[0000] Calling mem_process_seqs.., task: 49
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000003, nseq: 2004496
+	[0000][ M::kt_pipeline] read 2004496 sequences (200000003 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004738 reads in 343.565 CPU sec, 86.269 real sec
+[0000] Calling mem_process_seqs.., task: 50
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000070, nseq: 2004846
+	[0000][ M::kt_pipeline] read 2004846 sequences (200000070 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004496 reads in 347.645 CPU sec, 118.345 real sec
+[0000] Calling mem_process_seqs.., task: 51
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000131, nseq: 2004498
+	[0000][ M::kt_pipeline] read 2004498 sequences (200000131 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004846 reads in 339.023 CPU sec, 108.152 real sec
+[0000] Calling mem_process_seqs.., task: 52
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000009, nseq: 2004926
+	[0000][ M::kt_pipeline] read 2004926 sequences (200000009 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004498 reads in 336.085 CPU sec, 109.370 real sec
+[0000] Calling mem_process_seqs.., task: 53
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000188, nseq: 2006608
+	[0000][ M::kt_pipeline] read 2006608 sequences (200000188 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2004926 reads in 352.844 CPU sec, 129.232 real sec
+[0000] Calling mem_process_seqs.., task: 54
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000094, nseq: 2007206
+	[0000][ M::kt_pipeline] read 2007206 sequences (200000094 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006608 reads in 339.837 CPU sec, 79.851 real sec
+[0000] Calling mem_process_seqs.., task: 55
+[0000] 1. Calling kt_for - worker_bwt
+INFO	2023-05-28 23:50:11	SortSam	Read    60,000,000 records.  Elapsed time: 01:41:01s.  Time for last 10,000,000: 1,413s.  Last read position: chr11:69,376,906.  Last read name: SRR24443168.110080000
+[0000] read_chunk: 200000000, work_chunk_size: 200000163, nseq: 2007360
+	[0000][ M::kt_pipeline] read 2007360 sequences (200000163 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007206 reads in 355.500 CPU sec, 118.959 real sec
+[0000] Calling mem_process_seqs.., task: 56
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000054, nseq: 2007066
+	[0000][ M::kt_pipeline] read 2007066 sequences (200000054 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007360 reads in 348.953 CPU sec, 121.716 real sec
+[0000] Calling mem_process_seqs.., task: 57
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000141, nseq: 2007808
+	[0000][ M::kt_pipeline] read 2007808 sequences (200000141 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007066 reads in 352.447 CPU sec, 93.291 real sec
+[0000] Calling mem_process_seqs.., task: 58
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000088, nseq: 2007252
+	[0000][ M::kt_pipeline] read 2007252 sequences (200000088 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007808 reads in 355.805 CPU sec, 98.811 real sec
+[0000] Calling mem_process_seqs.., task: 59
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000119, nseq: 2007764
+	[0000][ M::kt_pipeline] read 2007764 sequences (200000119 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007252 reads in 352.242 CPU sec, 140.500 real sec
+[0000] Calling mem_process_seqs.., task: 60
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000181, nseq: 2006810
+	[0000][ M::kt_pipeline] read 2006810 sequences (200000181 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007764 reads in 350.251 CPU sec, 107.753 real sec
+[0000] Calling mem_process_seqs.., task: 61
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000161, nseq: 2007708
+	[0000][ M::kt_pipeline] read 2007708 sequences (200000161 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006810 reads in 356.914 CPU sec, 156.232 real sec
+[0000] Calling mem_process_seqs.., task: 62
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 200000004, nseq: 2006656
+	[0000][ M::kt_pipeline] read 2006656 sequences (200000004 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2007708 reads in 360.290 CPU sec, 158.204 real sec
+[0000] Calling mem_process_seqs.., task: 63
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 170716928, nseq: 1713786
+	[0000][ M::kt_pipeline] read 1713786 sequences (170716928 bp)...
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 2006656 reads in 350.561 CPU sec, 134.423 real sec
+[0000] Calling mem_process_seqs.., task: 64
+[0000] 1. Calling kt_for - worker_bwt
+[0000] read_chunk: 200000000, work_chunk_size: 0, nseq: 0
+[0000] 2. Calling kt_for - worker_aln
+[0000] 3. Calling kt_for - worker_sam
+	[0000][ M::mem_process_seqs] Processed 1713786 reads in 304.672 CPU sec, 96.259 real sec
+[0000] read_chunk: 200000000, work_chunk_size: 0, nseq: 0
+[0000] Computation ends..
+No. of OMP threads: 20
+Processor is running @2409.304926 MHz
+Runtime profile:
+
+	Time taken for main_mem function: 7558.26 sec
+
+	IO times (sec) :
+	Reading IO time (reads) avg: 2944.97, (2944.97, 2944.97)
+	Writing IO time (SAM) avg: 1496.51, (1496.51, 1496.51)
+	Reading IO time (Reference Genome) avg: 6.88, (6.88, 6.88)
+	Index read time avg: 15.47, (15.47, 15.47)
+
+	Overall time (sec) (Excluding Index reading time):
+	PROCESS() (Total compute time + (read + SAM) IO time) : 7531.36
+	MEM_PROCESS_SEQ() (Total compute time (Kernel + SAM)), avg: 7505.43, (7505.43, 7505.43)
+
+	 SAM Processing time (sec):
+	--WORKER_SAM avg: 381.50, (381.50, 381.50)
+
+	Kernels' compute time (sec):
+	Total kernel (smem+sal+bsw) time avg: 7123.83, (7123.83, 7123.83)
+		SMEM compute avg: 3962.52, (3984.81, 3944.08)
+		SAL compute avg: 1610.18, (1636.17, 1590.00)
+				MEM_SA avg: 1036.26, (1055.10, 1021.17)
+
+		BSW time, avg: 954.78, (958.75, 945.99)
+
+Important parameter settings: 
+	BATCH_SIZE: 512
+	MAX_SEQ_LEN_REF: 256
+	MAX_SEQ_LEN_QER: 128
+	MAX_SEQ_LEN8: 128
+	SEEDS_PER_READ: 500
+	SIMD_WIDTH8 X: 16
+	SIMD_WIDTH16 X: 8
+	AVG_SEEDS_PER_READ: 64
+samblaster: Found            0 of  130085314 (0.000%) total read ids are marked paired yet are unmated.
+samblaster: Removed   63577369 of  130085314 (48.874%) total read ids as duplicates.
+INFO	2023-05-29 00:10:25	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-05-29 00:14:41	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 02:05:30s.  Time for last 10,000,000:  253s.  Last read position: chr2:196,343,733
+INFO	2023-05-29 00:18:25	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 02:09:14s.  Time for last 10,000,000:  223s.  Last read position: chr5:153,650,251
+INFO	2023-05-29 00:21:50	SortSam	Wrote    30,000,000 records from a sorting collection.  Elapsed time: 02:12:39s.  Time for last 10,000,000:  205s.  Last read position: chr9:36,357,747
+INFO	2023-05-29 00:25:12	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 02:16:01s.  Time for last 10,000,000:  201s.  Last read position: chr12:62,235,161
+INFO	2023-05-29 00:28:51	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 02:19:40s.  Time for last 10,000,000:  218s.  Last read position: chr17:3,116,921
+INFO	2023-05-29 00:32:35	SortSam	Wrote    60,000,000 records from a sorting collection.  Elapsed time: 02:23:24s.  Time for last 10,000,000:  223s.  Last read position: chr22:16,960,466
+[Mon May 29 00:35:13 CST 2023] picard.sam.SortSam done. Elapsed time: 151.19 minutes.
+Runtime.totalMemory()=536870912

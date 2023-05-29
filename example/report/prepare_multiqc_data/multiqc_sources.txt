@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+GATK	base_recalibrator	P1.T.grp	/home/victor/Project/WES/XXXXXXXXSS/results/prepared/P1.T.grp
+GATK	base_recalibrator	P1.N.grp	/home/victor/Project/WES/XXXXXXXXSS/results/prepared/P1.N.grp
+Samtools	stats	P1.T	/home/victor/Project/WES/XXXXXXXXSS/results/prepared/P1.T.txt
+Samtools	stats	P1.N	/home/victor/Project/WES/XXXXXXXXSS/results/prepared/P1.N.txt

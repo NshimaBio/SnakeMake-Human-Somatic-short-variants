@@ -1,0 +1,3 @@
+Sample	command
+P1.N	fastp --thread 20 --in1 raw/P1.N.fastq.gz --out1 results/trimmed/P1.N.fastq.gz --json report/P1.N.fastp.json --html report/P1.N.fastp.html 
+P1.T	fastp --thread 20 --in1 raw/P1.T.fastq.gz --out1 results/trimmed/P1.T.fastq.gz --json report/P1.T.fastp.json --html report/P1.T.fastp.html 

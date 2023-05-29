@@ -1,0 +1,66 @@
+Using GATK jar /home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/eae8cf951fd032bb1b6016e51bedcb40_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx819M -jar /home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/eae8cf951fd032bb1b6016e51bedcb40_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar LearnReadOrientationModel --input results/called/P1.f1r2.tar.gz --tmp-dir /tmp/tmpj9pmsrnn --output results/called/P1.artifacts_prior.f1r2.tar.gz
+09:36:55.466 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/eae8cf951fd032bb1b6016e51bedcb40_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+09:36:56.731 INFO  LearnReadOrientationModel - ------------------------------------------------------------
+09:36:56.841 INFO  LearnReadOrientationModel - The Genome Analysis Toolkit (GATK) v4.4.0.0
+09:36:56.842 INFO  LearnReadOrientationModel - For support and documentation go to https://software.broadinstitute.org/gatk/
+09:36:56.842 INFO  LearnReadOrientationModel - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+09:36:56.842 INFO  LearnReadOrientationModel - Java runtime: OpenJDK 64-Bit Server VM v17.0.3-internal+0-adhoc..src
+09:36:56.843 INFO  LearnReadOrientationModel - Start Date/Time: May 29, 2023 at 9:36:53 AM CST
+09:36:56.843 INFO  LearnReadOrientationModel - ------------------------------------------------------------
+09:36:56.850 INFO  LearnReadOrientationModel - ------------------------------------------------------------
+09:36:56.852 INFO  LearnReadOrientationModel - HTSJDK Version: 3.0.5
+09:36:56.853 INFO  LearnReadOrientationModel - Picard Version: 3.0.0
+09:36:56.853 INFO  LearnReadOrientationModel - Built for Spark Version: 3.3.1
+09:36:56.853 INFO  LearnReadOrientationModel - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+09:36:56.854 INFO  LearnReadOrientationModel - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+09:36:56.855 INFO  LearnReadOrientationModel - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+09:36:56.856 INFO  LearnReadOrientationModel - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+09:36:56.856 INFO  LearnReadOrientationModel - Deflater: IntelDeflater
+09:36:56.857 INFO  LearnReadOrientationModel - Inflater: IntelInflater
+09:36:56.866 INFO  LearnReadOrientationModel - GCS max retries/reopens: 20
+09:36:56.875 INFO  LearnReadOrientationModel - Requester pays: disabled
+09:36:56.883 INFO  LearnReadOrientationModel - Initializing engine
+09:36:56.884 INFO  LearnReadOrientationModel - Done initializing engine
+09:36:57.029 INFO  IOUtils - Extracting data from archive: file:///home/victor/Project/WES/XXXXXXXXSS/results/called/P1.f1r2.tar.gz
+09:36:57.072 INFO  IOUtils - Extracting file: ./P1.T.alt_table
+09:36:57.113 INFO  IOUtils - Extracting file: ./P1.T.alt_histogram
+09:36:57.129 INFO  IOUtils - Extracting file: ./P1.T.ref_histogram
+09:37:01.725 INFO  LearnReadOrientationModel - Context AAC: with 685431 ref and 2923 alt examples, EM converged in 19 steps
+09:37:03.298 INFO  LearnReadOrientationModel - Context AAG: with 1046343 ref and 5789 alt examples, EM converged in 18 steps
+09:37:04.690 INFO  LearnReadOrientationModel - Context AAT: with 879381 ref and 2131 alt examples, EM failed to converge within 20 steps
+09:37:06.584 INFO  LearnReadOrientationModel - Context ACA: with 1024508 ref and 8795 alt examples, EM converged in 19 steps
+09:37:07.843 INFO  LearnReadOrientationModel - Context ACC: with 836246 ref and 7693 alt examples, EM converged in 17 steps
+09:37:09.155 INFO  LearnReadOrientationModel - Context ACG: with 198126 ref and 4791 alt examples, EM converged in 17 steps
+09:37:10.598 INFO  LearnReadOrientationModel - Context ACT: with 867787 ref and 6330 alt examples, EM converged in 18 steps
+09:37:12.344 INFO  LearnReadOrientationModel - Context AGA: with 1204324 ref and 8711 alt examples, EM converged in 18 steps
+09:37:14.318 INFO  LearnReadOrientationModel - Context AGC: with 1066063 ref and 9535 alt examples, EM converged in 17 steps
+09:37:15.949 INFO  LearnReadOrientationModel - Context AGG: with 1436512 ref and 10854 alt examples, EM converged in 17 steps
+09:37:17.071 INFO  LearnReadOrientationModel - Context ATA: with 599392 ref and 1801 alt examples, EM failed to converge within 20 steps
+09:37:17.984 INFO  LearnReadOrientationModel - Context ATC: with 688381 ref and 2412 alt examples, EM converged in 18 steps
+09:37:19.382 INFO  LearnReadOrientationModel - Context ATG: with 882036 ref and 3221 alt examples, EM converged in 19 steps
+09:37:20.379 INFO  LearnReadOrientationModel - Context CAA: with 944041 ref and 2758 alt examples, EM converged in 18 steps
+09:37:21.680 INFO  LearnReadOrientationModel - Context CAC: with 1089473 ref and 4773 alt examples, EM converged in 18 steps
+09:37:23.266 INFO  LearnReadOrientationModel - Context CAG: with 1602538 ref and 7417 alt examples, EM converged in 17 steps
+09:37:24.656 INFO  LearnReadOrientationModel - Context CCA: with 1396027 ref and 9707 alt examples, EM converged in 17 steps
+09:37:26.700 INFO  LearnReadOrientationModel - Context CCC: with 1268498 ref and 10617 alt examples, EM converged in 17 steps
+09:37:28.041 INFO  LearnReadOrientationModel - Context CCG: with 305542 ref and 6419 alt examples, EM converged in 16 steps
+09:37:29.181 INFO  LearnReadOrientationModel - Context CGA: with 185865 ref and 3387 alt examples, EM converged in 17 steps
+09:37:30.536 INFO  LearnReadOrientationModel - Context CGC: with 255462 ref and 6430 alt examples, EM converged in 16 steps
+09:37:31.505 INFO  LearnReadOrientationModel - Context CTA: with 591715 ref and 2061 alt examples, EM converged in 19 steps
+09:37:32.650 INFO  LearnReadOrientationModel - Context CTC: with 1320102 ref and 6844 alt examples, EM converged in 18 steps
+09:37:33.729 INFO  LearnReadOrientationModel - Context GAA: with 942969 ref and 3140 alt examples, EM converged in 18 steps
+09:37:34.741 INFO  LearnReadOrientationModel - Context GAC: with 643123 ref and 3900 alt examples, EM converged in 18 steps
+09:37:36.139 INFO  LearnReadOrientationModel - Context GCA: with 1012234 ref and 10003 alt examples, EM converged in 17 steps
+09:37:37.855 INFO  LearnReadOrientationModel - Context GCC: with 1153454 ref and 13782 alt examples, EM converged in 16 steps
+09:37:39.120 INFO  LearnReadOrientationModel - Context GGA: with 1122199 ref and 8913 alt examples, EM converged in 17 steps
+09:37:40.163 INFO  LearnReadOrientationModel - Context GTA: with 489858 ref and 1914 alt examples, EM converged in 19 steps
+09:37:41.062 INFO  LearnReadOrientationModel - Context TAA: with 707128 ref and 1720 alt examples, EM converged in 19 steps
+09:37:42.079 INFO  LearnReadOrientationModel - Context TCA: with 1062044 ref and 7225 alt examples, EM converged in 18 steps
+09:37:43.149 INFO  LearnReadOrientationModel - Context AAA: with 1496377 ref and 4269 alt examples, EM converged in 19 steps
+09:37:43.350 INFO  LearnReadOrientationModel - Shutting down engine
+[May 29, 2023 at 9:37:43 AM CST] org.broadinstitute.hellbender.tools.walkers.readorientation.LearnReadOrientationModel done. Elapsed time: 0.84 minutes.
+Runtime.totalMemory()=473956352
+Tool returned:
+SUCCESS

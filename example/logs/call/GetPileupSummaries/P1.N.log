@@ -1,0 +1,52 @@
+Using GATK jar /home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/7f54802ed271dfacc5c816169c8171e5_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx819M -jar /home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/7f54802ed271dfacc5c816169c8171e5_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar GetPileupSummaries --input results/prepared/P1.N.cram --intervals config/captured_regions.bed --variant /home/victor/DataHub/GATK/small_exac_common_3.hg38.vcf.gz --output results/called/P1.N.getpileupsummaries.table --tmp-dir /tmp/tmpck3g_wd3 -R /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta
+03:36:05.073 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/7f54802ed271dfacc5c816169c8171e5_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+03:36:05.159 INFO  GetPileupSummaries - ------------------------------------------------------------
+03:36:05.163 INFO  GetPileupSummaries - The Genome Analysis Toolkit (GATK) v4.4.0.0
+03:36:05.163 INFO  GetPileupSummaries - For support and documentation go to https://software.broadinstitute.org/gatk/
+03:36:05.163 INFO  GetPileupSummaries - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+03:36:05.163 INFO  GetPileupSummaries - Java runtime: OpenJDK 64-Bit Server VM v17.0.3-internal+0-adhoc..src
+03:36:05.164 INFO  GetPileupSummaries - Start Date/Time: May 29, 2023 at 3:36:04 AM CST
+03:36:05.164 INFO  GetPileupSummaries - ------------------------------------------------------------
+03:36:05.164 INFO  GetPileupSummaries - ------------------------------------------------------------
+03:36:05.165 INFO  GetPileupSummaries - HTSJDK Version: 3.0.5
+03:36:05.165 INFO  GetPileupSummaries - Picard Version: 3.0.0
+03:36:05.170 INFO  GetPileupSummaries - Built for Spark Version: 3.3.1
+03:36:05.171 INFO  GetPileupSummaries - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+03:36:05.171 INFO  GetPileupSummaries - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+03:36:05.172 INFO  GetPileupSummaries - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+03:36:05.172 INFO  GetPileupSummaries - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+03:36:05.172 INFO  GetPileupSummaries - Deflater: IntelDeflater
+03:36:05.172 INFO  GetPileupSummaries - Inflater: IntelInflater
+03:36:05.298 INFO  GetPileupSummaries - GCS max retries/reopens: 20
+03:36:05.299 INFO  GetPileupSummaries - Requester pays: disabled
+03:36:05.300 INFO  GetPileupSummaries - Initializing engine
+03:36:07.829 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/DataHub/GATK/small_exac_common_3.hg38.vcf.gz
+03:36:08.375 INFO  FeatureManager - Using codec BEDCodec to read file file:///home/victor/Project/WES/XXXXXXXXSS/config/captured_regions.bed
+03:36:08.386 INFO  IntervalArgumentCollection - Processing 58989998 bp from intervals
+03:36:08.516 INFO  GetPileupSummaries - Done initializing engine
+03:36:08.581 INFO  ProgressMeter - Starting traversal
+03:36:08.582 INFO  ProgressMeter -        Current Locus  Elapsed Minutes        Loci Processed      Loci/Minute
+03:36:18.633 INFO  ProgressMeter -         chr1:6653958              0.2               1757000       10519908.2
+03:36:28.630 INFO  ProgressMeter -        chr1:16939243              0.3               4845000       14500922.8
+03:36:38.630 INFO  ProgressMeter -        chr1:28822652              0.5               8796000       17564482.3
+03:36:48.630 INFO  ProgressMeter -        chr1:44402942              0.7              13054000       19558019.3
+03:36:55.752 INFO  GetPileupSummaries - 0 read(s) filtered by: MappingQualityAvailableReadFilter 
+58903 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+38818 read(s) filtered by: PrimaryLineReadFilter 
+0 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: MateOnSameContigOrNoMappedMateReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+97721 total reads filtered out of 925410 reads processed
+03:36:55.753 INFO  ProgressMeter -        chr1:58998944              0.8              16176468       20575948.8
+03:36:55.753 INFO  ProgressMeter - Traversal complete. Processed 16176468 total loci in 0.8 minutes.
+03:36:55.754 INFO  GetPileupSummaries - Shutting down engine
+[May 29, 2023 at 3:36:55 AM CST] org.broadinstitute.hellbender.tools.walkers.contamination.GetPileupSummaries done. Elapsed time: 0.85 minutes.
+Runtime.totalMemory()=683671552
+Tool returned:
+SUCCESS

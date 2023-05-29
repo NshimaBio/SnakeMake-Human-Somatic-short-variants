@@ -1,0 +1,53 @@
+Using GATK jar /home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/7f54802ed271dfacc5c816169c8171e5_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx819M -jar /home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/7f54802ed271dfacc5c816169c8171e5_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar FilterMutectCalls --variant results/called/P1.vcf.gz --reference /home/victor/DataHub/GATK/Homo_sapiens_assembly38.fasta --tumor-segmentation results/called/P1.segmentation.table --orientation-bias-artifact-priors results/called/P1.artifacts_prior.f1r2.tar.gz --max-alt-allele-count 3 --tmp-dir /tmp/tmp5k4g_ohs --output results/called/P1.filtered.vcf.gz
+09:50:16.109 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/victor/Project/WES/XXXXXXXXSS/.snakemake/conda/7f54802ed271dfacc5c816169c8171e5_/share/gatk4-4.4.0.0-0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+09:50:16.190 INFO  FilterMutectCalls - ------------------------------------------------------------
+09:50:16.197 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.4.0.0
+09:50:16.197 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+09:50:16.198 INFO  FilterMutectCalls - Executing as victor@shpc-1385-instance-rVoBySAX on Linux v5.15.0-71-generic amd64
+09:50:16.198 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v17.0.3-internal+0-adhoc..src
+09:50:16.199 INFO  FilterMutectCalls - Start Date/Time: May 29, 2023 at 9:50:15 AM CST
+09:50:16.199 INFO  FilterMutectCalls - ------------------------------------------------------------
+09:50:16.199 INFO  FilterMutectCalls - ------------------------------------------------------------
+09:50:16.202 INFO  FilterMutectCalls - HTSJDK Version: 3.0.5
+09:50:16.202 INFO  FilterMutectCalls - Picard Version: 3.0.0
+09:50:16.203 INFO  FilterMutectCalls - Built for Spark Version: 3.3.1
+09:50:16.203 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+09:50:16.204 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+09:50:16.205 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+09:50:16.205 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+09:50:16.206 INFO  FilterMutectCalls - Deflater: IntelDeflater
+09:50:16.206 INFO  FilterMutectCalls - Inflater: IntelInflater
+09:50:16.207 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+09:50:16.207 INFO  FilterMutectCalls - Requester pays: disabled
+09:50:16.209 INFO  FilterMutectCalls - Initializing engine
+09:50:17.305 INFO  FeatureManager - Using codec VCFCodec to read file file:///home/victor/Project/WES/XXXXXXXXSS/results/called/P1.vcf.gz
+09:50:17.360 WARN  IntelInflater - Zero Bytes Written : 0
+09:50:17.681 WARN  IntelInflater - Zero Bytes Written : 0
+09:50:17.924 INFO  FilterMutectCalls - Done initializing engine
+09:50:18.577 INFO  IOUtils - Extracting data from archive: file:///home/victor/Project/WES/XXXXXXXXSS/results/called/P1.artifacts_prior.f1r2.tar.gz
+09:50:18.651 INFO  IOUtils - Extracting file: ./P1.T.orientation_priors
+09:50:18.866 INFO  ProgressMeter - Starting traversal
+09:50:18.871 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+09:50:18.876 INFO  FilterMutectCalls - Starting pass 0 through the variants
+09:50:18.888 WARN  IntelInflater - Zero Bytes Written : 0
+09:50:23.963 INFO  FilterMutectCalls - Finished pass 0 through the variants
+09:50:25.329 INFO  FilterMutectCalls - Starting pass 1 through the variants
+09:50:25.331 WARN  IntelInflater - Zero Bytes Written : 0
+09:50:26.872 INFO  FilterMutectCalls - Finished pass 1 through the variants
+09:50:27.268 INFO  FilterMutectCalls - Starting pass 2 through the variants
+09:50:27.278 WARN  IntelInflater - Zero Bytes Written : 0
+09:50:28.753 INFO  FilterMutectCalls - Finished pass 2 through the variants
+09:50:28.757 INFO  FilterMutectCalls - Starting pass 3 through the variants
+09:50:28.760 WARN  IntelInflater - Zero Bytes Written : 0
+09:50:29.453 INFO  ProgressMeter -        chr1:11671383              0.2                  3000          17029.3
+09:50:30.598 INFO  FilterMutectCalls - Finished pass 3 through the variants
+09:50:30.616 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+09:50:30.618 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+09:50:30.619 INFO  ProgressMeter -        chr1:11671383              0.2                  3732          19066.8
+09:50:30.620 INFO  ProgressMeter - Traversal complete. Processed 3732 total variants in 0.2 minutes.
+09:50:30.646 INFO  FilterMutectCalls - Shutting down engine
+[May 29, 2023 at 9:50:30 AM CST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.24 minutes.
+Runtime.totalMemory()=473956352
