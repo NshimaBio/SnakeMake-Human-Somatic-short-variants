@@ -58,8 +58,7 @@ Annotate variant calls with VEP (VEP)
 │  └── trim
 ├── raw
 │  ├── P1.N.fastq.gz
-│  ├── P1.T.fastq.gz
-│  └── SRR24443166.fastq.gz
+│  └── P1.T.fastq.gz
 ├── report
 │  ├── fastp_multiqc_data
 │  ├── fastp_multiqc.html
