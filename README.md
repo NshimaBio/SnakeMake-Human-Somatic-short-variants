@@ -2,6 +2,10 @@ GATK best practices workflow Pipeline summary
 
 SnakeMake workflow for Human Somatic short variants (SNP+INDEL)
 
+### expected fastq inputs
+
+matched normal and tumor samples
+
 ### Reference
 
 1. Reference genome related files and GTAK budnle files (GATK)
